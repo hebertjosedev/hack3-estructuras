@@ -1,0 +1,128 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/pexels-anna-shvets-6664128.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+header .carta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 740px;
+    background-image: url('img/As_rombos.png');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+header .carta h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header nav{
+    width: 550px;
+    height: 350px;
+}
+
+header nav ul{
+    position: relative;
+    height: 100%;
+    list-style: none;
+    font-size: 15px;
+}
+
+header nav ul li{
+    padding: 15px;
+}
+
+header nav ul a{
+    position: absolute;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+header nav ul a:hover{
+    background: linear-gradient(to left, rgb(186, 216, 186) 0.5%, green);
+    color: #ffffff;
+    width: 100px;
+    border: none;
+}
+
+header nav ul a:first-child{
+    top: 0;
+    left: 180px;
+}
+
+header nav ul a:nth-child(2){
+    top: 0;
+    right: 158px;
+}
+
+header nav ul a:nth-child(3){
+    top: 70px;
+    right: 102px;
+}
+
+header nav ul a:nth-child(4){
+    top: 150px;
+    right: 0;
+}
+
+header nav ul a:nth-child(5){
+    right: 97px;
+    bottom: 70px;
+}
+
+header nav ul a:nth-child(6){
+    bottom: 0;
+    right: 158px;
+}
+
+header nav ul a:nth-child(7){
+    bottom: 0;
+    left: 180px;
+}
+
+header nav ul a:nth-child(8){
+    left: 97px;
+    bottom: 70px;
+}
+
+header nav ul a:nth-child(9){
+    top: 150px;
+    left: 0;
+}
+
+header nav ul a:nth-child(10){
+    top: 70px;
+    left: 102px;
+}
+
+
+@media (max-width: 576px) { 
+
+    .carta .hack-9{
+        left: 70px;
+    }
+
+    .carta .hack-4{
+        right: 70px;
+    }
+ }
